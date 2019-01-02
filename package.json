@@ -1,0 +1,22 @@
+{
+  "name": "use-element",
+  "version": "1.0.0",
+  "description": "React hook to access DOM element",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lfoussat/use-element.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lfoussat/use-element/issues"
+  },
+  "homepage": "https://github.com/lfoussat/use-element#readme",
+  "peerDependencies": {
+    "react": "^16.7.0"
+  }
+}
