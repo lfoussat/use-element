@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import { useEffect, useState, useRef } from 'react'
 
 export const useElementCallback = callback => {
   const ref = useRef()
