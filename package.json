@@ -2,11 +2,11 @@
   "name": "use-element",
   "version": "1.0.4",
   "description": "React hook to access DOM element",
-  "module": "index.mjs",
-  "main": "index.js",
+  "module": "index.js",
+  "main": "index.build.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "mjs-to-js ."
+    "build": "schwarzy ."
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,6 @@
     "react": "^16.7.0"
   },
   "devDependencies": {
-    "mjs-to-js": "0.0.2"
+    "schwarzy": "0.0.3"
   }
 }
