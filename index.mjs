@@ -1,6 +1,6 @@
-const { useEffect, useState, useRef } = require('react')
+import { useEffect, useState, useRef } from 'react'
 
-const useElementCallback = callback => {
+export const useElementCallback = callback => {
   const ref = useRef()
   const onRefValue = () => (ref.current ? callback(ref.current) : undefined)
 
@@ -9,11 +9,10 @@ const useElementCallback = callback => {
   return ref
 }
 
-const useElement = defaultValue => {
+export const useElement = defaultValue => {
   const [elem, setElem] = useState(defaultValue)
   const ref = useElementCallback(setElem)
 
   return [ref, elem]
 }
 
-module.exports = { useElementCallback, useElement }
