@@ -2,9 +2,13 @@ import { useEffect, useState, useRef } from 'react'
 
 export const useElementCallback = callback => {
   const ref = useRef()
-  const onRefValue = () => (ref.current ? callback(ref.current) : undefined)
+  let _current = ref.current
+  const onRefValue = () => {
+    if (_current === ref.current) return
+    callback((_current = ref.current))
+  }
 
-  useEffect(onRefValue, [ref.current])
+  useEffect(onRefValue)
 
   return ref
 }
@@ -15,4 +19,3 @@ export const useElement = defaultValue => {
 
   return [ref, elem]
 }
-
