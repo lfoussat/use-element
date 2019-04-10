@@ -5,7 +5,8 @@ export const useElementCallback = callback => {
   let _current = ref.current
   const onRefValue = () => {
     if (_current === ref.current) return
-    callback((_current = ref.current))
+    _current = ref.current
+    _current && callback(_current)
   }
 
   useEffect(onRefValue)
