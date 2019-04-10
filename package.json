@@ -1,6 +1,6 @@
 {
   "name": "use-element",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "React hook to access DOM element",
   "module": "index.js",
   "main": "index.build.js",
